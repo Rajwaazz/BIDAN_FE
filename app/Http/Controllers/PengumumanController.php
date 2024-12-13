@@ -15,6 +15,7 @@ class PengumumanController extends Controller
     }
     public function show()
     {
+        
         $data['pengumuman'] = \App\Models\Pengumuman::latest()->paginate(10);
         return view('pengumuman', $data);
     }

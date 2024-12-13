@@ -21,5 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Paginator::useBootstrap();
+        // Berbagi variabel $bidan ke semua view
+        view()->share('bidan', \App\Models\Bidan::all());
     }
 }

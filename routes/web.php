@@ -6,12 +6,20 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\PengumumanController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Bidan;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('dashboard',[BidanController::class, 'userindex']
+Route::get('/jadwal-bidan', function () {
+    $bidan = Bidan::all(); // Ambil data bidan dari database
+    return view('mylayout');
+});
+
+Route::get(
+    'dashboard',
+    [BidanController::class, 'userindex']
 )->middleware(['auth:web', 'role:user'])->name('dashboard');
 
 Route::middleware(['auth:web', 'role:user'])->group(function () {

@@ -29,6 +29,8 @@ Route::middleware('guest:web')->group(function () {
         ->name('password.reset');
     Route::post('reset-password', [NewPasswordController::class, 'store'])
         ->name('password.store');
+    Route::get('/verify-otp', [RegisteredUserController::class, 'showOTP'])->name('showotp');
+    Route::post('/verify-otp', [RegisteredUserController::class, 'verifyOTP']);
 });
 
 Route::middleware(['auth:web', 'role:user'])->group(function () {

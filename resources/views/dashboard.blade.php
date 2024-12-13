@@ -27,7 +27,7 @@
         </div>
 
         <!-- About Us Section -->
-        <section id="Tentang-Kami" class="relative px-4 py-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
+        <section id="Tentang-Kami" class="relative px-4 pt-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-32">
             <!-- Container untuk gambar di sebelah teks -->
             <div class="flex flex-col lg:flex-row lg:-mx-8">
                 <!-- Gambar di sebelah kiri -->
@@ -59,162 +59,120 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="Layanan" class="bg-blue-100 py-16">
-            <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-6 text-black">Layanan Kami</h2>
-                <p class="text-lg text-black text-center mb-8">
-                    Temukan berbagai layanan unggulan di PMB Dyah Sumarmo yang dirancang khusus untuk Ibu dan Anak. Kami
-                    siap melayani Anda dengan sepenuh hati dan profesionalisme, demi kenyamanan dan keamanan Anda.
-                </p>
-                <div class="grid md:grid-cols-3 gap-8">
-
-                    <!-- Card 1: Kesehatan Ibu dan Anak -->
-                    <div
-                        class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
-                        <img src="{{ url('assets/img/layanan-1.png') }}" alt="Service 1"
-                            class="mt-4 w-full h-48 object-contain">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold">Kesehatan Ibu dan Anak</h3>
-                            <p class="text-gray-600">KIA (Kesehatan Ibu dan Anak) adalah program kesehatan yang
-                                menyediakan layanan pemeriksaan, imunisasi, dan pemantauan
-                                tumbuh kembang anak untuk memastikan kesehatan optimal ibu
-                                selama masa kehamilan hingga pascapersalinan, serta mendukung
-                                pertumbuhan anak secara menyeluruh.
-                            </p>
+        <!-- Layanan Section -->
+        <section id="Layanan" class="pt-[120px]">
+            <div class="bg-blue-100 pb-16 pt-16">
+                <div class="max-w-6xl mx-auto px-4">
+                    <h2 class="text-4xl md:text-6xl font-bold text-center mb-6 text-black">Layanan Kami</h2>
+                    <p class="text-lg text-black text-center mb-8">
+                        Temukan berbagai layanan unggulan di PMB Dyah Sumarmo yang dirancang khusus untuk Ibu dan Anak. Kami
+                        siap melayani Anda dengan sepenuh hati dan profesionalisme, demi kenyamanan dan keamanan Anda.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+    
+                        <!-- Card 1: Kesehatan Ibu dan Anak -->
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                            <img src="{{ url('assets/img/layanan-1.png') }}" alt="Service 1"
+                                class="mt-4 w-full h-48 object-contain">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold">Kesehatan Ibu dan Anak</h3>
+                                <p class="text-gray-600">KIA (Kesehatan Ibu dan Anak) adalah program kesehatan yang
+                                    menyediakan layanan pemeriksaan, imunisasi, dan pemantauan
+                                    tumbuh kembang anak untuk memastikan kesehatan optimal ibu
+                                    selama masa kehamilan hingga pascapersalinan, serta mendukung
+                                    pertumbuhan anak secara menyeluruh.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Card 2: Keluarga Berencana (KB) -->
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                            <img src="{{ url('assets/img/layanan-2.png') }}" alt="Service 2"
+                                class="mt-4 w-full h-48 object-contain">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold">Keluarga Berencana (KB)</h3>
+                                <p class="text-gray-600">Keluarga Berencana (KB) adalah program yang bertujuan untuk
+                                    mengatur jarak dan jumlah anak dengan menggunakan alat
+                                    kontrasepsi. Program ini dirancang untuk menjaga kesejahteraan
+                                    keluarga dan kesehatan ibu, sekaligus memastikan anak-anak
+                                    tumbuh dengan baik.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Card 3: Persalinan -->
+                        <div
+                            class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
+                            <img src="{{ url('assets/img/layanan-3.png') }}" alt="Service 3"
+                                class="mt-4 w-full h-48 object-contain">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold">Persalinan</h3>
+                                <p class="text-gray-600">Layanan persalinan membantu ibu melahirkan dengan aman melalui
+                                    pendampingan oleh bidan yang terpercaya. Layanan ini juga
+                                    mencakup perawatan intensif bagi ibu dan bayi setelah
+                                    persalinan, termasuk pemantauan kondisi kesehatan dan pemberian
+                                    edukasi bagi ibu dalam merawat bayinya.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Card 2: Keluarga Berencana (KB) -->
-                    <div
-                        class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
-                        <img src="{{ url('assets/img/layanan-2.png') }}" alt="Service 2"
-                            class="mt-4 w-full h-48 object-contain">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold">Keluarga Berencana (KB)</h3>
-                            <p class="text-gray-600">Keluarga Berencana (KB) adalah program yang bertujuan untuk
-                                mengatur jarak dan jumlah anak dengan menggunakan alat
-                                kontrasepsi. Program ini dirancang untuk menjaga kesejahteraan
-                                keluarga dan kesehatan ibu, sekaligus memastikan anak-anak
-                                tumbuh dengan baik.
-                            </p>
-                        </div>
+                    <div class="text-center">
+                        <a href="/pasien/create" class="px-8 py-4 bg-teal-500 text-white rounded-full inline-block mt-8 font-semibold">
+                            Daftar Konsultasi</a
+                        >
                     </div>
-
-                    <!-- Card 3: Persalinan -->
-                    <div
-                        class="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:scale-105 transition duration-300">
-                        <img src="{{ url('assets/img/layanan-3.png') }}" alt="Service 3"
-                            class="mt-4 w-full h-48 object-contain">
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold">Persalinan</h3>
-                            <p class="text-gray-600">Layanan persalinan membantu ibu melahirkan dengan aman melalui
-                                pendampingan oleh bidan yang terpercaya. Layanan ini juga
-                                mencakup perawatan intensif bagi ibu dan bayi setelah
-                                persalinan, termasuk pemantauan kondisi kesehatan dan pemberian
-                                edukasi bagi ibu dalam merawat bayinya.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="/pasien/create" class="px-8 py-4 bg-teal-500 text-white rounded-full inline-block mt-8 font-semibold">
-                        Daftar Konsultasi</a
-                    >
                 </div>
             </div>
         </section>
 
-
         <!-- Pengumuman -->
-        <section id="Pengumuman" class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
-            <div class="">
-                <h2 class="text-3xl leading-tight font-bold">Pengumuman</h2>
-                <p class="text-gray-600 mt-2 md:max-w-lg">
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada
-                    fames ac turpis egestas.
-                </p>
-            </div>
-
-            <a href="{{ route('pengumuman') }}" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">
-                View All Posts</a>
-
-            <div class="md:flex mt-5 md:-mx-4">
-                <div class="md:px-4 md:w-1/2 xl:w-1/4">
-                    <div class="bg-white rounded border border-gray-300">
-                        <div class="p-4">
-                            <div class="flex items-center text-sm">
-                                <span class="text-teal-500 font-semibold">Tanggal</span>
-                                <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-                        </div>
-                        <p class="text-lg font-semibold leading-tight mt-4">
-                            Card Title
-                        </p>
-                        <p class="text-gray-600 mt-1">
-                            This card has supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <div class="flex items-center mt-4"></div>
-                    </div>
+        <section id="Pengumuman" class=" bg-blue-100 pt-[120px]">
+            <div class="relative bg-white pb-16 pt-16 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-32">
+                <div class="">
+                    <h2 class="text-3xl leading-tight font-bold">Pengumuman</h2>
+                    <p class="text-gray-600 mt-2 md:max-w-lg">
+                        Kami hadirkan pengumuman terbaru untuk memberikan Anda informasi penting yang dapat mendukung setiap langkah Anda.
+                    </p>
                 </div>
-            </div>
 
-            <div class="md:px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded border border-gray-300">
-                    <div class="p-4">
-                        <div class="flex items-center text-sm">
-                            <span class="text-teal-500 font-semibold">Tanggal</span>
-                            <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-                        </div>
-                        <p class="text-lg font-semibold leading-tight mt-4">
-                            Card Title
-                        </p>
-                        <p class="text-gray-600 mt-1">
-                            This card has supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <div class="flex items-center mt-4"></div>
+                @if ($pengumuman->isNotEmpty())
+                    <div class="">
+                        <a href="{{ route('pengumuman') }}" title="" class="inline-block text-teal-500 font-semibold mt-6 mt:md-0">
+                            Lihat Semua Pengumuman
+                        </a>
                     </div>
-                </div>
-            </div>
+                @endif
 
-            <div class="md:px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded border border-gray-300">
-                    <div class="p-4">
-                        <div class="flex items-center text-sm">
-                            <span class="text-teal-500 font-semibold">Tanggal</span>
-                            <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-                        </div>
-                        <p class="text-lg font-semibold leading-tight mt-4">
-                            Card Title
-                        </p>
-                        <p class="text-gray-600 mt-1">
-                            This card has supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <div class="flex items-center mt-4"></div>
+                @if ($pengumuman->isEmpty())
+                    <div class="alert alert-warning p-6 mb-8 text-center bg-yellow-100 border-l-4 border-yellow-500">
+                        Tidak ada pengumuman yang tersedia.
                     </div>
-                </div>
-            </div>
-
-            <div class="md:px-4 md:w-1/2 xl:w-1/4">
-                <div class="bg-white rounded border border-gray-300">
-                    <div class="p-4">
-                        <div class="flex items-center text-sm">
-                            <span class="text-teal-500 font-semibold">Tanggal</span>
-                            <span class="ml-4 text-gray-600">29 Nov, 2019</span>
-                        </div>
-                        <p class="text-lg font-semibold leading-tight mt-4">
-                            Card Title
-                        </p>
-                        <p class="text-gray-600 mt-1">
-                            This card has supporting text below as a natural lead-in to
-                            additional content.
-                        </p>
-                        <div class="flex items-center mt-4"></div>
+                @else
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+                        @foreach ($pengumuman->take(4) as $item)
+                            <div class="bg-white rounded border border-gray-300 shadow-md hover:scale-105 transition duration-300">
+                                <div class="p-4">
+                                    <div class="flex items-center text-sm">
+                                        <span class="text-teal-500 font-semibold">Tanggal</span>
+                                        <small class="ml-4 text-gray-600">{{ $item->created_at->setTimezone('Asia/Jakarta')->format('Y M d, H:i') }}</small>
+                                    </div>
+                                    <p class="text-lg font-semibold leading-tight mt-4">
+                                        {{ $item->judul }}
+                                    </p>
+                                    <div class="card-body p-4">
+                                        @if ($item->gambar)
+                                            <img src="{{ asset('storage/' . $item->gambar) }}"
+                                                class="w-full h-48 object-contain rounded-lg mb-4" alt="Gambar Pengumuman">
+                                        @endif
+                                        <p class="mb-4">{!! $item->deskripsi !!}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
-                </div>
-            </div>
+                @endif
             </div>
         </section>
 

@@ -1,3 +1,7 @@
+<head>
+    {!! htmlScriptTagJsApi() !!}
+</head>
+
 <x-guest-layout>
     @section('title', 'Register Form | PMB Dyah Sumarmo')
     <div class="min-h-screen bg-gradient-to-br from-cyan-500 to-blue-600 py-16 px-4 sm:px-6 lg:px-8">
@@ -72,9 +76,16 @@
                     <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2 text-sm text-red-600" />
                 </div>
 
+                <div class="relative">
+                    {!! htmlFormSnippet() !!}
+                    @error('g-recaptcha-response')
+                    <small class="text-danger">{{ $message }}</small>
+                    @enderror
+                </div>
+
                 <div>
                     <button type="submit"
-                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition-all duration-200">
+                        class="w-full flex justify-center py-3 px-4 border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 transition-all duration-200">
                         {{ __('Daftar Sekarang') }}
                     </button>
                 </div>

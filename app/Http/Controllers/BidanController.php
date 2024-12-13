@@ -15,7 +15,8 @@ class BidanController extends Controller
 
     public function userindex()
     {
-        $data['bidan'] = \App\Models\Bidan::latest()->paginate(10);
+        $data['bidan'] = \App\Models\Bidan::latest()->take(10)->get();
+        $data['pengumuman'] = \App\Models\Pengumuman::latest()->take(4)->get();
         return view('dashboard', $data);
     }
 
@@ -51,7 +52,7 @@ class BidanController extends Controller
             'status' => 'nullable|in:sedia,tidak tersedia'
         ]);
 
-        $bidan->update(array_filter($validatedData, function($value) {
+        $bidan->update(array_filter($validatedData, function ($value) {
             return !is_null($value);
         }));
         return redirect()->route('admin.bidan')->with('success', 'Bidan telah terupdate');
